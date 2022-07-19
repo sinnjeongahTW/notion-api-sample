@@ -1,0 +1,15 @@
+{
+  "name": "notion-scheduling",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "sinnjeongah",
+  "license": "MIT",
+  "scripts": {
+    "make": "node ."
+  },
+  "devDependencies": {
+    "@notionhq/client": "^2.0.0",
+    "dotenv": "^16.0.1",
+    "node": "^18.5.0"
+  }
+}
