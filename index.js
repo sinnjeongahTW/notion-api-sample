@@ -2,7 +2,7 @@ require('dotenv').config();
 const { Client } = require('@notionhq/client');
 
 const notion = new Client({ auth: process.env.NOTION_API_KEY });
-const members = process.env.MEMBERS.trim().split(',') || new Array(3).fill((x, idx) => `user ${idx+1}`);
+const members = process.env.MEMBERS.trim().split(',') || new Array(3).fill('').map((x, idx) => `user ${idx + 1}`);
 const title = process.env.TITLE || 'TITLE';
 const heading1 = process.env.HEADING_1 || 'HEADING_1';
 const heading2 = process.env.HEADING_2 || 'HEADING_2';
